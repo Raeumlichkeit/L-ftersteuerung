@@ -2,9 +2,7 @@
   Ein Projekt um Lüfter Temperatur bestimmt zu steuern mit möglichkeit die Lüfter auch Manuell zu Steuern
 
   Last Edit: 07.09.2023
-
 */
-
 
 // Library //
 #include "DHT.h"
