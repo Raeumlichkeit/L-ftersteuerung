@@ -1,3 +1,11 @@
+/*
+Ein Projekt um Lüfter Temperatur bestimmt zu steuern mit möglichkeit die Lüfter auch Manuell zu Steuern
+
+Last Edit: 07.09.2023
+
+*/
+
+
 // Library //
 #include "DHT.h"
 #include <Wire.h>
@@ -68,7 +76,7 @@ void loop()
 
  meassure();
 
-  schalterstate = digitalRead(schalterpin);
+  schalterstate = digitalRead(schalterpin); //Macht den Schalter "Digital"
 if (schalterstate == LOW) {
   schalterstate = 0;
 } else {
