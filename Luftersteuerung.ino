@@ -15,18 +15,17 @@
 // Defineren der Pins //
 #define DHTPIN 5
 #define DHTTYPE DHT22
-#define I2C_ADDRESS 0x3C
+#define SensorPin = 3;
+#define fanPin = 9;
+#define potiPin = A1 ;
+#define schalterpin = 4;
 #define RST_PIN -1
-
-DHT dht(DHTPIN, DHTTYPE);
+#define I2C_ADDRESS 0x3C
 SSD1306AsciiWire oled;
+DHT dht(DHTPIN, DHTTYPE);
 
 // Konstanten //
-const int SensorPin = 3;
-const int fanPin = 9;
-const int potiPin = A1 ;
 const int fanMinSpeed = 75;
-const int schalterpin = 4;
 const int tMin = 20;
 const int tMax = 50;
 
